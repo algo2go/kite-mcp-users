@@ -274,7 +274,7 @@ func (s *Store) Create(u *User) error {
 
 	if s.db != nil {
 		err := s.db.ExecInsert(
-			`INSERT OR IGNORE INTO users (id, email, kite_uid, display_name, role, status, created_at, updated_at, last_login, onboarded_by, admin_email) VALUES (?,?,?,?,?,?,?,?,?,?,?)`,
+			`INSERT INTO users (id, email, kite_uid, display_name, role, status, created_at, updated_at, last_login, onboarded_by, admin_email) VALUES (?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT (id) DO NOTHING`,
 			dbID, dbEmail, dbKiteUID, dbDisplayName, dbRole, dbStatus,
 			dbCreatedAt, dbUpdatedAt,
 			lastLogin, dbOnboardedBy, dbAdminEmail,
