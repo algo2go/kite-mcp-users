@@ -13,10 +13,10 @@ go 1.25.0
 // commit a5e7e76): single-dep packages extracted in a single
 // dispatch. Replace count: 5.
 require (
-	github.com/algo2go/kite-mcp-broker v0.1.0 // indirect
-	github.com/algo2go/kite-mcp-isttz v0.1.0 // indirect
-	github.com/algo2go/kite-mcp-logger v0.1.0 // indirect
-	github.com/algo2go/kite-mcp-money v0.1.0 // indirect
+	github.com/algo2go/kite-mcp-broker v0.1.2 // indirect
+	github.com/algo2go/kite-mcp-isttz v0.1.1 // indirect
+	github.com/algo2go/kite-mcp-logger v0.1.1 // indirect
+	github.com/algo2go/kite-mcp-money v0.1.1 // indirect
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/crypto v0.48.0
 )
@@ -24,7 +24,7 @@ require (
 require github.com/algo2go/kite-mcp-alerts v0.1.0
 
 require (
-	github.com/algo2go/kite-mcp-domain v0.1.0 // indirect
+	github.com/algo2go/kite-mcp-domain v0.1.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1 // indirect
